@@ -24,15 +24,15 @@ const Form = () => {
     }, [country, street])
 
     const onChangeCountry = (e) => {
-        setCountry(e.targetValue)
+        setCountry(e.target.value)
     }
 
     const onChangeStreet = (e) => {
-        setStreet(e.targetValue)
+        setStreet(e.target.value)
     }
 
     const onChangeSubject = (e) => {
-        setSubject(e.targetValue)
+        setSubject(e.target.value)
     }
 
     return (
