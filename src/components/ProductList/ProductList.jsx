@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTelegram } from '../../hooks/useTelegram';
 import ProductItem from '../ProductItem/ProductItem';
 import './ProductList.css';
@@ -50,13 +50,13 @@ const ProductList = () => {
 
     return (
         <div className={'list'}>
-            {products.map(item => {
+            {products.map(item => (
                 <ProductItem
                     className={'item'}
                     product={item}
-                    onAdd = {onAdd}
+                    onAdd={onAdd}
                 />
-            })}
+            ))}
         </div>
     );
 };
